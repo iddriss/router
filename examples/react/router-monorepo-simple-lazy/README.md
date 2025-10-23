@@ -21,7 +21,7 @@ Finally, in the app, we can create a map of routes to components ([`packages/app
 
 ## How lazy loading works
 
-Eath feature exports a `createLazyRoute` function that returns a lazy route. This lazy route is then used in the router map to bind the lazy route to the actual route. This allows library to define their component, pending, error and nod found components directly.
+Each feature exports a `createLazyRoute` function that returns a lazy route. This lazy route is then used in the router map to bind the lazy route to the actual route. This allows library to define their component, pending, error and nod found components directly.
 
 The types on the ([`packages/app/src/main.tsx`](./packages/app/src/main.tsx)) are used to map the route to the lazy route, and enforce they match the route path.
 
